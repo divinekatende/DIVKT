@@ -101,21 +101,7 @@ footer {
     }
 }
 
-/* Responsivité pour les petits écrans */
-@media (max-width: 600px) {
-    body {
-        padding: 10px;                      /* Réduit le padding sur petits écrans */
-    }
 
-    h1 {
-        font-size: 2.2em;                   /* Réduit la taille du titre */
-    }
-
-    .photo-profil {
-        width: 100px;                       /* Image plus petite */
-        height: 100px;
-    }
-}
 
 /* Style général pour toutes les images (optionnel) */
 img {border-radius: 50%;                     /* Images arrondies */
@@ -150,3 +136,25 @@ img {border-radius: 50%;                     /* Images arrondies */
     font-size: 16px;                        /* Taille du texte normale */
     line-height: 1.6;                       /* Bonne lisibilité */
 }
+
+@media (max-width: 600px) {
+    body {
+      padding: 10px; /* Moins d’espace autour du contenu */
+    }
+    h1 {
+      font-size: 1.8em; /* Titre plus petit */
+    }
+    .photo-profil {
+      width: 100px;   /* Photo plus petite */
+      height: 100px;
+    }
+    nav a {
+      font-size: 16px; /* Texte du menu plus petit et lisible */
+      padding-left: 10px;
+      margin-bottom: 15px;
+    }
+    .bio {
+      padding: 15px; /* Moins de padding dans la bio */
+    }
+  }
+  
