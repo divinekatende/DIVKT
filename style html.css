@@ -1,0 +1,134 @@
+/* Police stylée depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap'); 
+/* Importation des polices Pacifico et Quicksand depuis Google Fonts */
+
+
+{
+    margin: 0;                 /* Enlève les marges par défaut */
+    padding: 0;                /* Enlève les espacements internes par défaut */
+    box-sizing: border-box;   /* Inclut les bordures et le padding dans les dimensions */
+}
+
+/* Corps de la page */
+body {
+    font-family: 'arial', sans-serif;       /* Police générale du texte */
+    background-color: #fef6ff;              /* Fond rose pastel doux */
+    color: #3a3a3a;                         /* Couleur du texte principale */
+    padding: 20px;                          /* Espace intérieur du corps */
+    line-height: 1.6;                       /* Espacement entre les lignes de texte */
+}
+
+/* Bannière en haut de la page */
+.top-banner {
+    background-color: #f5d0fe;              /* Fond lilas clair */
+    color: white;                           /* Texte en blanc */
+    text-align: center;                     /* Centrage horizontal du texte */
+    padding: 5px 0;                         /* Espacement vertical */
+    font-size: 16px;                        /* Taille de police moyenne */
+}
+
+/* Liens dans le menu de navigation */
+nav a {
+    color: black;                           /* Texte noir */
+    margin-bottom: 20px;                    /* Marge basse entre les liens */
+    padding-left: 20px;                     /* Espacement à gauche */
+    text-decoration: none;                  /* Pas de soulignement */
+    font-weight: bold;                      /* Texte en gras */
+    font-size: 18px;                        /* Taille du texte */
+}
+
+/* Lien actif (celui de la page actuelle) */
+nav a.active {
+    border-bottom: 3px solid #f538f8;       /* Ligne rose sous le lien actif */
+}
+
+/* En-tête principal */
+header {
+    text-align: center;                     /* Centrage du contenu */
+    padding: 40px 0;                        /* Espace vertical interne */
+    background-color: #f5d0fe;              /* Fond lilas clair */
+    color: white;                           /* Texte blanc */
+    border-radius: 20px;                    /* Coins arrondis */
+    margin-bottom: 30px;                    /* Espace sous l’en-tête */
+}
+
+/* Titre principal */
+h1 {font-family: 'Pacifico', cursive;       /* Police décorative pour le titre */
+    font-size: 3em;                         /* Très grande taille de police */
+    color: #a21caf;                         /* Couleur violette vive */
+}
+
+/* Section chronologique (timeline) */
+.timeline {
+    max-width: 800px;                       /* Largeur maximale de la timeline */
+    margin: 0 auto;                         /* Centre horizontalement */
+    padding: 40px 20px;                     /* Espacement intérieur */
+    background-color: #fff;                 /* Fond blanc */
+    border-radius: 16px;                    /* Coins arrondis */
+    box-shadow: 0 0 10px rgba(162, 28, 175, 0.1); /* Ombre légère violette */
+}
+
+/* Une étape dans la timeline */
+.step {
+    background-color: #f5d0fe;              /* Fond lilas clair */
+    margin-bottom: 30px;                    /* Espace entre chaque étape */
+    padding: 20px;                          /* Espacement intérieur */
+    border-radius: 12px;                    /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);/* Ombre foncée pour relief */
+}
+
+/* Titre d'une étape */
+.step h2 {
+    color: #a21caf;                         /* Couleur violette profonde */
+    margin-bottom: 10px;                    /* Marge sous le titre */
+}
+
+/* Paragraphe d'une étape */
+.step p {
+    font-size: 16px;                        /* Taille du texte normale */
+    line-height: 1.6;                       /* Bonne lisibilité */
+}
+
+/* Pied de page */
+footer {
+    text-align: center;                     /* Centrage du texte */
+    margin-top: 40px;                       /* Espace au-dessus du footer */
+    color: #888;                            /* Texte en gris clair */
+}
+
+/* Effet d'apparition "fade-in" */
+.fade-in {
+    opacity: 0;                             /* Commence invisible */
+    transform: translateY(20px);            /* Légèrement décalé vers le bas */
+    animation: fadeIn 1s ease-out forwards; /* Animation d'entrée vers le haut */
+}
+
+/* Définition de l'animation "fadeIn" */
+@keyframes fadeIn {
+    to {
+        opacity: 1;                         /* Devient visible */
+        transform: translateY(0);           /* Se remet en place */
+    }
+}
+
+/* Responsive (petits écrans) */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;                      /* Moins de padding pour les petits écrans */
+    }
+
+    h1 {
+        font-size: 2.2em;                   /* Titre un peu plus petit */
+    }
+
+    .photo-profil {
+        width: 100px;                       /* Image réduite */
+        height: 100px;
+    }
+}
+/* Image stylisée en cercle */
+img {
+    border-radius: 50%;                     /* Rend les images circulaires */
+    width: 150px;                           /* Largeur fixe */
+    height: 150px;                          /* Hauteur fixe */
+}
