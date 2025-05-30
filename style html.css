@@ -132,22 +132,3 @@ img {
     width: 150px;                           /* Largeur fixe */
     height: 150px;                          /* Hauteur fixe */
 }
-<style>
-  nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  nav li {
-    margin: 10px 0;
-  }
-  nav a {
-    text-decoration: none;
-    color: deeppink;
-    font-weight: bold;
-  }
-</style>
-@media  and (max-width: 762px) {
-    nav {
-        display: none;
-    }
-}
