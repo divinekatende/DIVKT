@@ -176,3 +176,52 @@ img {border-radius: 50%;                     /* Images arrondies */
         display: none;
     }
 }
+/* CACHER LE BOUTON MENU PAR DÉFAUT (sur PC) */
+#menuBtn {
+  display: none;
+}
+
+/* STYLE DE BASE DU MENU (toujours visible sur PC) */
+#menuNav {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+
+/* STYLE DES LIENS */
+#menuNav a {
+  text-decoration: none;
+  color: #a21caf;
+  font-weight: bold;
+}
+
+/* ADAPTATION SUR SMARTPHONE : tout change ici */
+@media (max-width: 768px) {
+  /* Affiche le bouton menu */
+  #menuBtn {
+    display: block;
+    background-color: #f5d0fe;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  /* Cacher le menu par défaut */
+  #menuNav {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  /* Quand le menu est ouvert (grâce à JavaScript) */
+  #menuNav.open {
+    display: flex;
+  }
+}
