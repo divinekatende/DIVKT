@@ -1,2 +1,2 @@
 # DIVKT
-portefolio
+PORTFOLIO
