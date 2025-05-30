@@ -171,3 +171,8 @@ img {border-radius: 50%;                     /* Images arrondies */
     font-weight: bold;
   }
 </style>
+@media  and (max-width: 762px) {
+    nav {
+        display: none;
+    }
+}
