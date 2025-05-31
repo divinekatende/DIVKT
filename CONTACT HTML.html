@@ -4,49 +4,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - DIVKT</title>
-  <link rel="stylesheet" href="style contact.css"> <!-- Ton fichier CSS -->
+  <!-- Lien vers ton fichier CSS dédié à la page contact -->
+  <link rel="stylesheet" href="style contact.css"> 
 </head>
 <body>
+
+  <!-- Bannière en haut de la page -->
   <div class="top-banner">BIENVENUE 🎀</div>
 
-</div>
- <!-- BOUTON MENU POUR MOBILE UNIQUEMENT -->
-<button id="menuBtn" class="mobile-only">Menu ☰</button>
+  <!-- Bouton menu visible uniquement sur mobile -->
+  <button id="menuBtn" class="mobile-only">Menu ☰</button>
 
-<!-- MENU DE NAVIGATION -->
-<nav id="menuNav">
-  <a href="index.html" class="active">Home</a>
-  <a href="PARCOURS HTML.html">Mon parcours</a>
-  <a href="CONTACT HTML.html">Contact</a>
-</nav>
+  <!-- Menu de navigation -->
+  <nav id="menuNav">
+    <a href="index.html" class="active">Home</a>
+    <a href="PARCOURS HTML.html">Mon parcours</a>
+    <a href="CONTACT HTML.html">Contact</a>
+  </nav>
 
+  <!-- Section contact -->
+  <section id="contact">
+    <h2>Contacte-nous ✨</h2>
+    <p class="intro">
+      Une question, une suggestion, ou juste envie de dire bonjour ?<br>
+      N’hésite pas à nous écrire, nous serons ravis de vous répondre !
+    </p>
 
-<section id="contact">
-  <h2>Contacte-nous ✨</h2>
-  <p class="intro">
-    Une question, une suggestion, ou juste envie de dire bonjour ?<br>
-    N’hésite pas à nous écrire, nous serons ravis de vous répondre !
-  </p>
+    <!-- Informations de contact -->
+    <div class="infos">
+      <p><strong>📧 Email :</strong> 
+        <!-- Correction du lien mailto pour ouvrir le client mail -->
+        <a href="mailto:divinekatende23@gmail.com">divinekatende23@gmail.com</a>
+      </p>
+      <p><strong>📞 Téléphone :</strong> +243844001620</p>
+      <p><strong>📍 Adresse :</strong> Congo/Kinshasa</p>
+    </div>
 
-  <div class="infos">
-    <p><strong>📧 Email :</strong> <a href="divinekatende23@gmail.com">divinekatende23@gmail.com</a></p>
-    <p><strong>📞 Téléphone :</strong> +243844001620</p>
-    <p><strong>📍 Adresse :</strong> Congo/kinshasa</p>
-  </div>
+    <!-- Formulaire de contact -->
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Ton nom" required>
+      <input type="email" name="email" placeholder="Ton email" required>
+      <textarea name="message" placeholder="Ton message" rows="5" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
 
-  <form class="contact-form">
-    <input type="text" name="name" placeholder="Ton nom" required>
-    <input type="email" name="email" placeholder="Ton email" required>
-    <textarea name="message" placeholder="Ton message" rows="5" required></textarea>
-    <button type="submit">Envoyer</button>
-  </form>
-
-  <h2>Restons connectés 🌐</h2>
-  <div class="social-links">
-    <p>instagram <a href="https://instagram.com/divine katende" target="_blank">Divine Katende</a></p>
-    <p>facebook <a href="https://facebook.com/divine katende" target="_blank">Divine Katende</a></p>
-  </div>
-</section>
+    <!-- Réseaux sociaux -->
+    <h2>Restons connectés 🌐</h2>
+    <div class="social-links">
+      <p>Instagram : 
+        <!-- Correction des URLs : pas d’espace dans l’adresse -->
+        <a href="https://instagram.com/divinekatende" target="_blank" rel="noopener noreferrer">Divine Katende</a>
+      </p>
+      <p>Facebook : 
+        <a href="https://facebook.com/divinekatende" target="_blank" rel="noopener noreferrer">Divine Katende</a>
+      </p>
+    </div>
+  </section>
 
 </body>
 </html>

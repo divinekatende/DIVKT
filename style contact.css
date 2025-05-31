@@ -1,12 +1,10 @@
-
 /* STYLE GÉNÉRAL DU BODY */
-
 body {
-    font-family: 'Quicksand', sans-serif;            /* Police utilisée pour le texte */
-    background: linear-gradient(to bottom right, #fef6ff, #f5d0fe);          /* couleur fond */
-    color: #3a3a3a;             /* couleur texte */
-    margin: 0;        /* 0 marge */
-    padding: 0;         /* 0 espace */
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(to bottom right, #fef6ff, #f5d0fe);
+    color: #3a3a3a;
+    margin: 0;
+    padding: 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -15,46 +13,101 @@ body {
     line-height: 1.7;
     animation: fadeInBody 1s ease-out forwards;
 }
+
+/* Bannière en haut */
 .top-banner {
     background-color: white;
     color: #f538f8;
     text-align: center;
     padding: 5px 0;
     font-size: 16px;
-  }
-  
+}
+
+/* Menu navigation */
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 800px;
+    padding-left: 20px;
+}
+
 nav a {
     margin-bottom: 20px;
-    padding-left: 20px;
     color: black;
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
     text-align: left;
-  }
-  
-  nav a.active {
+    transition: color 0.3s;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #a21caf;
+    outline: none;
+}
+
+nav a.active {
     border-bottom: 3px solid #f538f8;
-  }
-  
+}
+
+/* Bouton menu pour mobile */
+.mobile-only {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .mobile-only {
+        display: block;
+        background: #f538f8;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 12px;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 10px 0;
+        width: calc(100% - 40px);
+        max-width: 800px;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+        max-width: 800px;
+        padding-left: 0;
+    }
+
+    nav.open {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 10px 20px;
+        border-bottom: 1px solid #f5d0fe;
+        margin-bottom: 0;
+    }
+}
+
 /* Animation d'apparition douce */
 @keyframes fadeInBody {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
-/* Pour rendre tout plus fluide */
-* {
-    transition: all 0.3s ease;
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
 }
 
+/* Contact section */
 #contact {
     padding: 40px 20px;
-    background-color: #fff; /* blanc pour contraster avec le fond pastel */
+    background-color: #fff;
     border-radius: 16px;
     box-shadow: 0 4px 8px rgba(162, 28, 175, 0.1);
     max-width: 800px;
@@ -67,20 +120,20 @@ nav a {
     color: #a21caf;
     margin-bottom: 20px;
     font-size: 2.5em;
+    text-align: center;
 }
 
 #contact .intro {
-    font-family: 'Quicksand', sans-serif;
     font-size: 18px;
-    color: #6b21a8; /* violet doux */
+    color: #6b21a8;
     margin-bottom: 30px;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
 #contact .infos p {
-    font-family: 'Quicksand', sans-serif;
     font-size: 16px;
     margin: 10px 0;
     color: #4b5563;
@@ -92,10 +145,13 @@ nav a {
     font-weight: 600;
 }
 
-#contact .infos a:hover {
+#contact .infos a:hover,
+#contact .infos a:focus {
     text-decoration: underline;
+    outline: none;
 }
 
+/* Formulaire */
 .contact-form {
     max-width: 600px;
     margin: 30px auto;
@@ -109,15 +165,15 @@ nav a {
     border: 2px solid #f5d0fe;
     border-radius: 12px;
     background-color: #fef6ff;
-    font-family: 'Quicksand', sans-serif;
     font-size: 16px;
     transition: border-color 0.3s;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
     border-color: #a21caf;
-    outline: none;
+    outline: 3px solid #a21caf;
 }
 
 .contact-form button {
@@ -127,21 +183,23 @@ nav a {
     padding: 12px 30px;
     border-radius: 12px;
     font-size: 18px;
-    font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
+    font-family: 'Quicksand', sans-serif;
 }
 
-.contact-form button:hover {
+.contact-form button:hover,
+.contact-form button:focus {
     background-color: #a21caf;
     transform: translateY(-3px);
+    outline: none;
 }
 
+/* Liens réseaux sociaux */
 .social-links p {
     margin: 10px 0;
     font-size: 18px;
-    font-family: 'Quicksand', sans-serif;
 }
 
 .social-links a {
@@ -151,8 +209,10 @@ nav a {
     transition: color 0.3s;
 }
 
-.social-links a:hover {
+.social-links a:hover,
+.social-links a:focus {
     color: #a21caf;
+    outline: none;
 }
 
 /* Responsive */
