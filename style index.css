@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap');
+
+/* Réinitialisation */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corps de la page */
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #fef6ff;
+  color: #3a3a3a;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Bannière */
+.top-banner {
+  background-color: #f5d0fe;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 16px;
+}
+
+/* Bouton menu */
+.menu-button {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #a21caf;
+  cursor: pointer;
+  margin: 15px 0;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: deeppink;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav a.active {
+  border-bottom: 3px solid #f538f8;
+}
+
+/* En-tête principal */
+header {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #f5d0fe;
+  color: white;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+/* Titre */
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3em;
+  color: #a21caf;
+}
+
+/* Section bio */
+.bio {
+  max-width: 600px;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(162, 28, 175, 0.1);
+}
+
+/* Photo profil */
+.photo-profil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .menu-button {
+    display: block;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    display: none; /* caché par défaut */
+  }
+
+  nav.active {
+    display: flex; /* affiché si bouton cliqué */
+  }
+
+  nav a {
+    padding: 10px 0;
+  }
+}

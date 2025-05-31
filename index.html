@@ -1,24 +1,10 @@
-   <!-- DECLARATION DU DOCUMENT  -->
-   <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DKM-ACCUEIL</title>
-  <link rel="stylesheet" href="style site webs.css">
-
-  <!-- Script JavaScript intégré -->
-  <script>
-     // Script pour toggler le menu sur mobile
-    document.addEventListener("DOMContentLoaded", () => {
-      const menuBtn = document.getElementById('menuBtn');
-      const menuNav = document.getElementById('menuNav');
-      menuBtn.addEventListener('click', () => {
-        menuNav.classList.toggle('active'); // active affiche ou cache le menu
-      });
-    });
-  </script>
-  <script src="main.js"></script>
+  <title>DKM - ACCUEIL</title>
+  <link rel="stylesheet" href="style index.css">
 </head>
 
 <body>
@@ -26,23 +12,23 @@
   <div class="top-banner">WELCOM 🎀</div>
 
   <!-- BOUTON MENU POUR SMARTPHONE UNIQUEMENT -->
-  <button id="menuBtn" class="menu-button" onclick="toggleMenu()">☰ Menu</button>
+  <button id="menuBtn" class="menu-button">☰ Menu</button>
 
   <!-- MENU DE NAVIGATION -->
-  <nav id="menuNav">
+  <nav id="menuNav" class="menu">
     <a href="index.html" class="active">Home</a>
     <a href="PARCOURS HTML.html">Mon parcours</a>
     <a href="CONTACT HTML.html">Contact</a>
   </nav>
 
   <!-- En-tête principal -->
-  <header class="fade-in">
+  <header>
     <h1>🤍DKM🤍</h1>
     <p>Bienvenue sur mon portfolio💫</p>
   </header>
 
   <!-- À propos de moi -->
-  <section class="bio fade-in">
+  <section class="bio">
     <h2>À propos de moi</h2>
     <img src="WhatsApp Image 2025-04-25 à 13.07.58_4e871284.jpg" alt="Photo de Divine" class="photo-profil">
     <p>
@@ -51,5 +37,16 @@
       Étudiante en L1 à la Faculté des Sciences Informatiques de l’Université Protestante au Congo (UPC).
     </p>
   </section>
+
+  <!-- JavaScript placé en bas du body -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const menuBtn = document.getElementById('menuBtn');
+      const menuNav = document.getElementById('menuNav');
+      menuBtn.addEventListener('click', () => {
+        menuNav.classList.toggle('active');
+      });
+    });
+  </script>
 </body>
 </html>

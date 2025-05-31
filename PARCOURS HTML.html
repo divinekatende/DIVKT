@@ -1,22 +1,10 @@
-   <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- important pour mobile -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DIVKT - Mon parcours</title>
-  <link rel="stylesheet" href="style html.css">
-<script>
-     // Script pour toggler le menu sur mobile
-    document.addEventListener("DOMContentLoaded", () => {
-      const menuBtn = document.getElementById('menuBtn');
-      const menuNav = document.getElementById('menuNav');
-      menuBtn.addEventListener('click', () => {
-        menuNav.classList.toggle('active'); // active affiche ou cache le menu
-      });
-    });
-  </script>
-  
-  <script src="main.js"></script>
+  <link rel="stylesheet" href="style parcours.css" />
 </head>
 <body>
 
@@ -45,9 +33,9 @@
     <div class="step">
       <h2>🎓 MES ÉTUDES</h2>
       <p>J'ai débuté ma scolarité à l'Ecole GS Bansambi pour la maternelle et le primaire. J'ai poursuivi
-         mes humanités à l'Institut Mulemba EDAP, où j'ai obtenu mon diplôme d'État avec 71%. Actuellement
-         , je poursuis ma passion pour l'informatique à l'Université Protestante au Congo (UPC) en première
-          licence en sciences informatiques.</p>
+         mes humanités à l'Institut Mulemba EDAP, où j'ai obtenu mon diplôme d'État avec 71%. Actuellement,
+         je poursuis ma passion pour l'informatique à l'Université Protestante au Congo (UPC) en première
+         licence en sciences informatiques.</p>
     </div>
 
     <div class="step">
@@ -76,11 +64,23 @@
       <h2>🚀 Objectifs futurs</h2>
       <p>Portée par une passion profonde pour la technologie, je rêve de révolutionner le
          quotidien de mon peuple en créant une entreprise innovante qui apportera des solutions concrètes
-          aux défis de la vie moderne. Je projette également de fonder une école d'excellence, dédiée à la
-           formation des talents d'aujourd'hui et des leaders de demain. Enfin
-        , je souhaite m'engager en politique pour défendre des projets qui feront avancer mon pays.</p>
+         aux défis de la vie moderne. Je projette également de fonder une école d'excellence, dédiée à la
+         formation des talents d'aujourd'hui et des leaders de demain. Enfin,
+         je souhaite m'engager en politique pour défendre des projets qui feront avancer mon pays.</p>
     </div>
   </section>
+
+  <!-- Script pour toggle menu -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const menuBtn = document.getElementById("menuBtn");
+      const menuNav = document.getElementById("menuNav");
+
+      menuBtn.addEventListener("click", () => {
+        menuNav.classList.toggle("active");
+      });
+    });
+  </script>
 
 </body>
 </html>
