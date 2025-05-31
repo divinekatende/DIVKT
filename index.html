@@ -8,7 +8,16 @@
   <link rel="stylesheet" href="style site webs.css">
 
   <!-- Script JavaScript intégré -->
-  
+  <script>
+     // Script pour toggler le menu sur mobile
+    document.addEventListener("DOMContentLoaded", () => {
+      const menuBtn = document.getElementById('menuBtn');
+      const menuNav = document.getElementById('menuNav');
+      menuBtn.addEventListener('click', () => {
+        menuNav.classList.toggle('active'); // active affiche ou cache le menu
+      });
+    });
+  </script>
   <script src="main.js"></script>
 </head>
 
