@@ -1,227 +1,94 @@
-/* Police stylée depuis Google Fonts */
+/* Importation des polices depuis Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap');
- /* Importation de deux polices depuis Google Fonts */
 
-
- {
-    margin: 0;                 /* Supprime les marges externes par défaut */
-    padding: 0;                /* Supprime les espacements internes par défaut */
-    box-sizing: border-box;   /* Inclut padding et bordures dans les dimensions */
-}
-
-/* Style général du corps de la page */
-body {
-    font-family: 'Arial', sans-serif;       /* Police utilisée pour le texte */
-    background-color: #fef6ff;              /* Couleur de fond  */
-    color: #3a3a3a;                         /* Couleur du texte principale */
-    padding: 20px;                          /* Espacement intérieur autour du contenu */
-    line-height: 1.6;                       /* Hauteur de ligne pour faciliter la lecture */
-}
-
-/* Bannière en haut de la page */
-.top-banner {
-    background-color: #f5d0fe;              /* Fond rose  */
-    color: white;                           /* Couleur du texte */
-    text-align: center;                     /* Centrer le texte */
-    padding: 5px 0;                         /* Espacement vertical */
-    font-size: 16px;                        /* Taille de la police */
-}
-
-/* Liens dans le menu de navigation */
-nav a {
-    color: black;                           /* Couleur du texte des liens */
-    margin-bottom: 20px;                    /* Marge sous chaque lien */
-    padding-left: 20px;                     /* Espacement à gauche */
-    text-decoration: none;                  /* Supprime le soulignement */
-    font-weight: bold;                      /* Texte en gras */
-    font-size: 18px;                        /* Taille du texte */
-}
-
-/* Lien actif dans la navigation (surligné) */
-nav a.active {
-    border-bottom: 3px solid #f538f8;       /* Ligne rose en bas du lien actif */
-}
-
-/* En-tête principal de la page */
-header {
-    text-align: center;                     /* Centrage du contenu */
-    padding: 40px 0;                        /* Espacement haut et bas */
-    background-color: #f5d0fe;              /* Fond rose lilas */
-    color: white;                           /* Couleur du texte */
-    border-radius: 20px;                    /* Coins arrondis */
-    margin-bottom: 30px;                    /* Espace sous l'en-tête */
-}
-/* Titre principal */
-h1 {
-    font-family: 'Pacifico', cursive;       /* Utilise une police cursive spéciale */
-    font-size: 3em;                         /* Grande taille pour le titre */
-    color: #a21caf;                         /* Couleur violette profonde */
-}
-
-/* Section de présentation ("bio") */
-.bio {
-    max-width: 600px;                       /* Largeur maximale de la section */
-    margin: auto;                           /* Centre la section horizontalement */
-    background-color: #fff;                 /* Fond blanc */
-    padding: 20px;                          /* Espacement intérieur */
-    border-radius: 16px;                    /* Coins arrondis */
-    box-shadow: 0 0 10px rgba(162, 28, 175, 0.1); /* Ombre légère violette */
-}
-
-/* Pied de page */
-footer {
-    text-align: center;                     /* Texte centré */
-    margin-top: 40px;                       /* Espace au-dessus du pied de page */
-    color: #888;                            /* Couleur gris clair */
-}
-
-/* Style des photos de profil */
-.photo-profil {
-    width: 150px;                           /* Largeur fixe */
-    height: 150px;                          /* Hauteur fixe */
-    border-radius: 50%;                     /* Rend l'image ronde */
-    object-fit: cover;                      /* Remplit le cadre sans déformer */
-    display: block;                         /* Affiche comme un bloc */
-    margin: 0 auto 20px;                    /* Centre horizontalement + marge en bas */
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);    /* Ombre légère autour de l'image */
-}
-
-/* Effet d'apparition fluide */
-.fade-in {
-    opacity: 0;                             /* Commence invisible */
-    transform: translateY(20px);            /* Légère position vers le bas */
-    animation: fadeIn 1s ease-out forwards; /* Animation en 1 seconde vers le haut */
-}
-
-/* Définition de l'animation fadeIn */
-@keyframes fadeIn {
-    to {
-        opacity: 1;                         /* Rend visible */
-        transform: translateY(0);           /* Repositionne à sa place normale */
-    }
-}
-
-
-
-/* Style général pour toutes les images (optionnel) */
-img {border-radius: 50%;                     /* Images arrondies */
-    width: 150px;                           /* Largeur fixe */
-    height: 150px;                          /* Hauteur fixe */
-}
-
-/* Section chronologique (timeline) */
-.timeline {
-    max-width: 800px;                       /* Largeur maximale */
-    margin: 0 auto;                         /* Centre la section */
-    padding: 40px 20px;                     /* Espacement intérieur */
-}
-
-/* Style pour chaque étape de la timeline */
-.step {
-    background-color: #1e293b;              /* Fond bleu foncé */
-    margin-bottom: 30px;                    /* Espace entre les étapes */
-    padding: 20px;                          /* Espacement intérieur */
-    border-radius: 12px;                    /* Coins arrondis */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);/* Ombre autour des blocs */
-}
-
-/* Titre dans une étape */
-.step h2 {
-    color: #38bdf8;                         /* Bleu clair pour les titres */
-    margin-bottom: 10px;                    /* Espace sous le titre */
-}
-
-/* Texte dans une étape */
-.step p {
-    font-size: 16px;                        /* Taille du texte normale */
-    line-height: 1.6;                       /* Bonne lisibilité */
-}
-
-@media (max-width: 600px) {
-    body {
-      padding: 10px; /* Moins d’espace autour du contenu */
-    }
-    h1 {
-      font-size: 1.8em; /* Titre plus petit */
-    }
-    .photo-profil {
-      width: 100px;   /* Photo plus petite */
-      height: 100px;
-    }
-    nav a {
-      font-size: 16px; /* Texte du menu plus petit et lisible */
-      padding-left: 10px;
-      margin-bottom: 15px;
-    }
-    .bio {
-      padding: 15px; /* Moins de padding dans la bio */
-    }
-  }
- <style>
-  nav ul {
-    list-style: none;
+/* Réinitialisation de base */
+* {
+    margin: 0;
     padding: 0;
-  }
-  nav li {
-    margin: 10px 0;
-  }
-  nav a {
-    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* Corps de la page */
+body {
+    font-family: 'Quicksand', sans-serif;   /* Police douce et lisible */
+    background-color: #fef6ff;              /* Fond très clair */
+    color: #3a3a3a;                         /* Texte gris foncé */
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Bannière tout en haut */
+.top-banner {
+    background-color: #f5d0fe;              /* Rose pâle */
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+/* Navigation horizontale (desktop) */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;                              /* Espacement entre les liens */
+    margin-bottom: 20px;
+}
+
+/* Liens du menu */
+nav a {
     color: deeppink;
+    text-decoration: none;
     font-weight: bold;
-  }
-</style>
-@media  and (max-width: 762px) {
-    nav {
-        display: none;
-    }
-}
-/* CACHER LE BOUTON MENU PAR DÉFAUT (sur PC) */
-#menuBtn {
-  display: none;
+    font-size: 18px;
 }
 
-/* STYLE DE BASE DU MENU (toujours visible sur PC) */
-#menuNav {
-  display: flex;
-  gap: 20px;
-  flex-direction: row;
+/* Soulignement du lien actif */
+nav a.active {
+    border-bottom: 3px solid #f538f8;
 }
 
-/* STYLE DES LIENS */
-#menuNav a {
-  text-decoration: none;
-  color: #a21caf;
-  font-weight: bold;
+/* Bouton menu hamburger (visible uniquement sur mobile) */
+.menu-button {
+    display: none;                          /* Caché par défaut */
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #a21caf;
+    cursor: pointer;
+    margin-bottom: 15px;
 }
 
-/* ADAPTATION SUR SMARTPHONE : tout change ici */
-@media (max-width: 768px) {
-  /* Affiche le bouton menu */
-  #menuBtn {
-    display: block;
+/* En-tête principal */
+header {
+    text-align: center;
+    padding: 40px 0;
     background-color: #f5d0fe;
     color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-bottom: 10px;
-  }
-
-  /* Cacher le menu par défaut */
-  #menuNav {
-    display: none;
-    flex-direction: column;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
-
-  /* Quand le menu est ouvert (grâce à JavaScript) */
-  #menuNav.open {
-    display: flex;
-  }
+    border-radius: 20px;
+    margin-bottom: 30px;
 }
+
+/* Titre principal */
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    color: #a21caf;
+}
+
+/* Section bio (description personnelle) */
+.bio {
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(162, 28, 175, 0.1);
+}
+
+/* Style des photos */
+.photo-profil, img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;

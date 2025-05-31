@@ -1,48 +1,51 @@
    <!-- DECLARATION DU DOCUMENT  -->
    <!DOCTYPE html>
 <html lang="fr">
-    <!-- L'EN TETE -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DKM-ACCUEIL</title>
-    <link rel="stylesheet" href="style site webs.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DKM-ACCUEIL</title>
+  <link rel="stylesheet" href="style site webs.css">
+
+  <!-- Script JavaScript intégré -->
+  <script>
+    // Cette fonction est appelée quand on clique sur le bouton menu
+    function toggleMenu() {
+      var nav = document.getElementById("menuNav");
+      nav.classList.toggle("active"); // Ajoute ou enlève la classe "active"
+    }
+  </script>
 </head>
+
 <body>
-    <!-- BANNIERE D'ACCUEIL -->
-    <div class="top-banner">WELCOM 🎀</div>
-<!-- MENU DE NAVIGATION -->
- <button id="menu-btn">Menu ☰</button>
+  <!-- Bannière en haut de page -->
+  <div class="top-banner">WELCOM 🎀</div>
 
-<!-- BOUTON MENU POUR MOBILE UNIQUEMENT -->
-<button id="menuBtn" class="mobile-only">Menu ☰</button>
+  <!-- BOUTON MENU POUR SMARTPHONE UNIQUEMENT -->
+  <button id="menuBtn" class="menu-button" onclick="toggleMenu()">☰ Menu</button>
 
-<!-- MENU DE NAVIGATION -->
-<nav id="menuNav">
-  <a href="index.html" class="active">Home</a>
-  <a href="PARCOURS HTML.html">Mon parcours</a>
-  <a href="CONTACT HTML.html">Contact</a>
-</nav>
+  <!-- MENU DE NAVIGATION -->
+  <nav id="menuNav">
+    <a href="index.html" class="active">Home</a>
+    <a href="PARCOURS HTML.html">Mon parcours</a>
+    <a href="CONTACT HTML.html">Contact</a>
+  </nav>
 
+  <!-- En-tête principal -->
+  <header class="fade-in">
+    <h1>🤍DKM🤍</h1>
+    <p>Bienvenue sur mon portfolio💫</p>
+  </header>
 
-   <!-- EN TETE DU SITE  -->
-    <header class="fade-in">
-        <h1>🤍DKM🤍</h1>
-        <p>Bienvenue sur mon portfolio💫</p>
-    </header>
-    <!-- A PROPOS DE MOI  -->
-    <section class="bio fade-in">
-
-        <h2>À propos de moi</h2>
-        <img src="WhatsApp Image 2025-04-25 à 13.07.58_4e871284.jpg" alt="Photo de Divine" class="photo-profil"style="width:150px;">
-
-        <p>DIVINE KATENDE MUSASA de nationalité Congolaise néée le 1 mars 2007 
-            fille de JEAN-GUILLAIN MUSASA et JACQUIE MATOKA 
-            Etudiante en L1 dans la faculté de sciences informatiques au sein de l'université protestante au congo (UPC)
-        </p>
-    </section>
-    
+  <!-- À propos de moi -->
+  <section class="bio fade-in">
+    <h2>À propos de moi</h2>
+    <img src="WhatsApp Image 2025-04-25 à 13.07.58_4e871284.jpg" alt="Photo de Divine" class="photo-profil">
+    <p>
+      DIVINE KATENDE MUSASA, de nationalité Congolaise, née le 1 mars 2007,<br>
+      fille de JEAN-GUILLAIN MUSASA et JACQUIE MATOKA,<br>
+      Étudiante en L1 à la Faculté des Sciences Informatiques de l’Université Protestante au Congo (UPC).
+    </p>
+  </section>
 </body>
 </html>
-
-
